@@ -25,7 +25,7 @@ const database = {
         }
 
         try {
-            //check if database exists
+            //check if database exists based on paths given
             if (!fs.existsSync(root_db_directory)) {
                 logs.error("Database does not exist");
                 fs.mkdirSync(root_db_directory, { recursive: true });
